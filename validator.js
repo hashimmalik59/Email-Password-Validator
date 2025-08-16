@@ -10,7 +10,8 @@ form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&.])[A-Za-z\d@$!%*?&.]{8,}$/;
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[a-zA-Z][a-zA-Z0-9._%+-]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+
 
     const checkPassword = passwordRegex.test(password.value);
     const checkEmail = emailRegex.test(email.value);
