@@ -20,11 +20,13 @@ form.addEventListener("submit", function (e) {
         errorPasswordMessage.classList.remove("error-password");
     } else {
         errorPasswordMessage.classList.add("error-password");
+        successMessage.style.display = "none";
     }
     if (!checkEmail) {
         errorEmailMessage.classList.remove("error-email");
     } else {
         errorEmailMessage.classList.add("error-email");
+        successMessage.style.display = "none";
     }
     if (checkPassword && checkEmail) {
         successMessage.style.display = "initial";
