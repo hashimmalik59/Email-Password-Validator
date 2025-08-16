@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password & Email Validator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>LogIn Form</h2>
+      <form>
+        <input
+          class="password"
+          type="password"
+          placeholder="Enter your Password"
+        />
+        <h5 class="error-color-password error-password">Incorrect Password</h5>
+        <input class="email" type="text" placeholder="Enter your Email" />
+        <h5 class="error-color-email error-email">Incorrect Email</h5>
+        <input type="submit" />
+        <h5 class="success-message">LoggedIn Successfully</h5>
+      </form>
+    </div>
+  </body>
+  <script src="validator.js"></script>
+</html>
